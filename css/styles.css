@@ -1,0 +1,131 @@
+html,
+body {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+}
+
+#rotateScreen {
+  background-color: dodgerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  z-index: 2;
+}
+
+#screen-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100vh;
+  width: 90vw;
+}
+
+canvas {
+  background-color: #5c94fc;
+  height: 100%;
+  width: auto;
+}
+
+#button-wrap {
+  align-items: center;
+  background-color: bisque;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+#direction-container,
+#button-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 50%;
+}
+
+#button-container {
+  justify-content: flex-end;
+}
+
+.direction-center {
+  background-color: #333333;
+  border-radius: 10%;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: 60px;
+}
+
+.button.up {
+  background-color: black;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border-radius: 15%;
+  margin-top: -50px;
+}
+
+.button.down {
+  background-color: black;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border-radius: 15%;
+  margin-top: 50px;
+}
+
+.button.left {
+  background-color: black;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border-radius: 15%;
+  margin-left: -50px;
+}
+
+.button.right {
+  background-color: black;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border-radius: 15%;
+  margin-left: 50px;
+}
+
+#button-wrap {
+  text-align: right;
+}
+
+.button.a,
+.button.b {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.button.fire {
+  background-color: red;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+#fire-wrap {
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
